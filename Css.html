@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet " type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm" class="navs">HOME</a>
+      <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm" class="navs">PLOV</a>
+      <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm" class="navs">SOUPS</a>
+      <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm" class="navs">BREADS</a>
+      <div class="navs" id="morenav" href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm"> <div class="button" name="button">MORE<i class="fas fa-caret-down"></i></div>
+        <div class="insidemore">
+          <a class="" href="#">OUR WORKS</a>
+          <a class="" href="#">ABOUT</a>
+          <a class="" href="#">CONTACT AS</a>
+        </div>
+      </div>
+      <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm" class="navs" id="searchnavbar"><i  class="fas fa-search"></i>
+
+      </a>
+    </div>
+
+
+      <div class="generaldiv">
+        <div class="divofimages">
+          <div class="generalimages">
+            <img class="" src="Images/oSh.jpg" alt="" width="1200" height="600">
+            <div class="divoffoods">
+              <h3 class="h3ofimages"><b>PLOV</b></h3>
+              <p class="pofimages plov"><i> The famous food in Uzbekistan</i></p>
+            </div>
+
+          </div>
+          <div class="generalimages">
+            <img class="" src="Images/shorva.jpg" alt="" width="1200" height="600">
+            <div class="divoffoods">
+              <h3 class="h3ofimages"><b>SOUPS</b></h3>
+              <p class="pofimages shorva"><i> Delicious waterable foods</i></p>
+            </div>
+          </div>
+          <div class="generalimages">
+            <img class="" src="Images/somsa.jpg" alt="" width="1200" height="600">
+            <div class="divoffoods">
+              <h3 class="h3ofimages"><b>SOMSA</b></h3>
+              <p class="pofimages somsa"><i> The look like a bread with</i></p>
+            </div>
+          </div>
+        </div>
+        <div class="Theband">
+          <h2 class="headeroftheband">THE UZBEK NATIONAL FOODS</h2>
+          <p class="titles">I love uzbeks </p>
+          <p class="Thebandp">Not for nothing people from all over the world like and honor the Uzbek cuisine. It is one of the most savoury and various in tastes cuisine in Central Asia. Only names of appetizing Uzbek food make one’s mouth water. Plov, manti, shurpa, shashlik, lagman, samsa have such wonderful smell that one can’t resist the temptation to taste all these dishes piping hot.
+
+Many Uzbek recipes have centuries-old history, and the process of preparing food is accompanied with various rituals, which have reached our days. All specific peculiarities of Uzbek food have been forming for centuries.
+<br>
+<br>
+National Uzbek food is the separate layer of culture of Uzbek people. Unlike their nomadic neighbors, Uzbek people always were a settled nation, which cultivated agriculture and cattle-raising. At their fertile valleys Uzbek people raised vegetables, fruits and cereals; they bred cattle, which were the source of meat, the abundance of which can be seen in most dishes. Undoubtedly, Uzbek food imbibed some culinary traditions of Turkic, Kazakh, Uigur, Tajik, Tatar, Mongolian and other neighboring nations, settled on the territory of Central Asia.
+<br>
+<br>
+Among dishes taken from other nations there are roast, kebab, bogursak, straws, pelmeni (meat dumpling), manti, lagman and etc. However in turn such native Uzbek food as plov, dimlama, buglama, shurpa, mastava and many others are served at tables of many countries of the world. Due to warm climate rich harvests of grain and legumes (green gram, pea) are gathered, and great variety of fruits, vegetables, grape, watermelons, melons, gourds, greens, berries and nuts raise here. All this gastronomical splendor is used in preparation of Uzbek food.
+<br>
+<br>
+Pastry and sour-milk dishes take an important place in Uzbek food. The national Uzbek food is characterized with wide use of meat: mutton, beef and horse meat. By the way, different regions of the country cook in their own way. On the north the preference is given to plov, roasted meat, pastry and lepeshka (bread). On the south people prepare wide variety of complex dishes of rice and vegetables and also make excellent desserts.
+<br>
+<br>
+Uzbeks generally eat by hand and sit at the floor or at the low table – dastarkhan. At the beginning the table is served with sweets and fruits. Later it is served with vegetables and salads. Then it is the turn of soups – savory shurpa, thick mastava, etc. Repast is finished with main dishes – manti, lagman, shashlik and plov.
+<br>
+<br>
+Uzbek food is probably one of the main sights of Uzbekistan, which will become the discovery for all gourmets.</p>
+        <div class="secondhandofband">
+          <div class="shdivs">
+            <p>Name</p>
+            <img src="Images/bandmember.jpg" alt="">
+          </div>
+          <div class="shdivs">
+            <p>Name</p>
+            <img src="Images/bandmember.jpg" alt="">
+          </div>
+          <div class="shdivs">
+            <p>Name</p>
+            <img src="Images/bandmember.jpg" alt="">
+          </div>
+        </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x=document.getElementsByClassName('generalimages');
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display="none";
+          }
+        myIndex++
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display= "block";
+        setTimeout(carousel, 2000);
+        }
+      </script>
+  </body>
+</html>
