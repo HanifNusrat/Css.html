@@ -7,13 +7,27 @@
 body {
   background: green;
 }
+.imageofgeneral {
+  width: 100%;
+  background-image: url(Images/main-bg-1832x1080-1.jpg);
+  height: 600px;
+  z-index: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
 .generaldiv {
 
 }
 .generalfirstdiv {
-  position: relative;
-  max-width: 2000px;
   margin: 0 auto;
+  width: 60%;
+  padding: 10px;
+
 }
 .Marketifylogo {
   float: left;
@@ -23,6 +37,12 @@ body {
   float: left;
   width: 30%;
   display: ;
+}
+.headerofnavbar {
+  margin: 0 auto;
+  width: 60%;
+  padding: 10px;
+
 }
 ul {
   list-style-type: none;
