@@ -9,19 +9,16 @@ body {
 }
 .imageofgeneral {
   width: 100%;
-  background-image: url(Images/main-bg-1832x1080-1.jpg);
-  height: 600px;
+  background: url(Images/main-bg-1832x1080-1.jpg) no-repeat;
+  top: 0;
   z-index: 0;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: auto;
+  position: relative;
   width: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-
+  background-size: 100%;
+  background-position: center bottom;
 }
 .generaldiv {
-
+  justify-content: center;
 }
 .generalfirstdiv {
   margin: 0 auto;
@@ -35,13 +32,14 @@ body {
 }
 .navbar {
   float: left;
-  width: 30%;
-  display: ;
+  width: 70%;
 }
 .headerofnavbar {
   margin: 0 auto;
-  width: 60%;
-  padding: 10px;
+  width: 100%;
+  padding: 100px 5px;
+  text-align: center;
+  color: #fff;
 
 }
 ul {
@@ -58,4 +56,15 @@ li a {
 }
 li {
   margin: 10px 20px;
+}
+.withitems::after{
+  border-color: #ededed transparent;
+  border-style: solid;
+  border-width: 14px 14px 0 0;
+  bottom: -14px;
+  content: '';
+  display: block;
+  left: 14px;
+  position: absolute;
+  width: 0;
 }
