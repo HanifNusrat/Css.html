@@ -9,13 +9,13 @@ body {
 }
 .imageofgeneral {
   width: 100%;
+  height: 100%;
   background: url(Images/main-bg-1832x1080-1.jpg) no-repeat;
-  top: 0;
   z-index: 0;
   position: relative;
-  width: 100%;
+  background-attachment: fixed;
   background-size: 100%;
-  background-position: center bottom;
+  background-position: center top;
 }
 .generaldiv {
   justify-content: center;
@@ -31,7 +31,6 @@ body {
   width: 30%;
 }
 .navbar {
-  float: left;
   width: 70%;
 }
 .headerofnavbar {
@@ -55,16 +54,46 @@ li a {
   font-weight: bold;
 }
 li {
-  margin: 10px 20px;
+  margin: 10px 14px;
+  white-space: nowrap;
 }
-.withitems::after{
-  border-color: #ededed transparent;
+#withitemsone::after {
+  border-color: #cecece transparent;
   border-style: solid;
-  border-width: 14px 14px 0 0;
-  bottom: -14px;
+  border-width: 0px 12px 12px 12px;
   content: '';
   display: block;
-  left: 14px;
-  position: absolute;
+  position: relative;
   width: 0;
+  left: 14px;
+}
+#withitemstwo::after {
+  border-color: #cecece transparent;
+  border-style: solid;
+  border-width: 0px 12px 12px 12px;
+  content: '';
+  display: block;
+  position: relative;
+  width: 0;
+  top: -150px;
+  left: 77px;
+}
+#withitemsthree::after {
+  border-color: #cecece transparent;
+  border-style: solid;
+  border-width: 0px 12px 12px 12px;
+  content: '';
+  display: block;
+  position: relative;
+  width: 0;
+  left: 89px;
+  top: -150px;
+}
+.dropdownone {
+  color: #191919;
+  margin: 0px 14px;
+}
+.dropdowndiv {
+  background-color: #cecece;
+  padding: 8px 2px;
 }
