@@ -3,97 +3,272 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  line-height: 1.5;
 }
-body {
-  background: green;
-}
-.imageofgeneral {
-  width: 100%;
-  height: 100%;
-  background: url(Images/main-bg-1832x1080-1.jpg) no-repeat;
-  z-index: 0;
-  position: relative;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: center top;
-}
-.generaldiv {
-  justify-content: center;
-}
-.generalfirstdiv {
+.centerwidth {
+  width: 80%;
   margin: 0 auto;
-  width: 60%;
-  padding: 10px;
-
-}
-.Marketifylogo {
-  float: left;
-  width: 30%;
-}
-.navbar {
-  width: 70%;
-}
-.headerofnavbar {
-  margin: 0 auto;
-  width: 100%;
-  padding: 100px 5px;
   text-align: center;
-  color: #fff;
+}
+.popular {
+  border-top: 1px solid grey;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px 10px;
+  position: relative;
+  min-width: 200px;
+  text-align: center;
+  font-size: 14px;
+}
+#buttonpopular {
+  padding: 8px 13px;
+  position: relative;
+  color: #888888;
+  background: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  top: -47px;
+  border: 1.8px solid #888888;
+}
+#buttonpopular:hover {
+  border: 1.8px solid #5b5b5b;
+  color: #5b5b5b;
+}
+.card {
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
 
 }
-ul {
-  list-style-type: none;
-  display: flex;
-  text-align: right;
+
+.container {
+    padding: 2px 16px;
+}
+.slider {
+    width: auto;
+    margin: 0px 50px 50px;
+}
+
+.slick-slide {
+  background: #ffffff;
+  color: #363636;
+  padding: 18px 13px;
+  margin: 0;
   font-size: 10px;
+  font-family: "Arial", "Helvetica";
   text-align: left;
+  transition: background 0.8s;
 }
-li a {
-  color: #fff;
+.slick-arrow{
+  background: #000;
+  display: none;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: white;
+    display: none;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 434px;
+}
+
+.slick-center {
+  background: black;
+}
+a {
   text-decoration: none;
-  font-weight: bold;
 }
-li {
-  margin: 10px 14px;
-  white-space: nowrap;
+.container {
+  padding: 0;
 }
-#withitemsone::after {
-  border-color: #cecece transparent;
-  border-style: solid;
-  border-width: 0px 12px 12px 12px;
-  content: '';
+.container a {
+  color: #363636;
+  padding: 12px 3px;
+}
+#Authorsofpopular img {
+  display: inline!important;
+}
+#inlineitempopular {
   display: block;
-  position: relative;
-  width: 0;
-  left: 14px;
+  color: #363636;
 }
-#withitemstwo::after {
-  border-color: #cecece transparent;
-  border-style: solid;
-  border-width: 0px 12px 12px 12px;
-  content: '';
+#Authorsofpopular p {
+    /* padding: 7px 11px 0px 0px; */
+    display: inline;
+    color: #363636;
+}
+.overlay {
+  position: relative;
+}
+.image {
+  opacity: 1;
   display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.recentsection {
+  border-top: 1px solid grey;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px 10px;
   position: relative;
-  width: 0;
-  top: -150px;
-  left: 77px;
+  min-width: 200px;
+  text-align: center;
+  font-size: 14px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
 }
-#withitemsthree::after {
-  border-color: #cecece transparent;
-  border-style: solid;
-  border-width: 0px 12px 12px 12px;
-  content: '';
-  display: block;
+@media screen and (max-width:600px){
+  .recentsection {
+    border-top: 1px solid grey;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 40px 10px;
+    position: relative;
+    min-width: 200px;
+    text-align: center;
+    font-size: 14px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 100%;
+  }
+}
+
+.Secondimage {
+  background: url(Images/main-bg-1832x1080-1.jpg) no-repeat ;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+}
+.allhoverbuttons {
+  padding: 8px 13px;
   position: relative;
-  width: 0;
-  left: 89px;
-  top: -150px;
+  color: #b5b5b5;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1.8px solid #b5b5b5;
 }
-.dropdownone {
-  color: #191919;
-  margin: 0px 14px;
+.allhoverbuttons:hover {
+  border: 1.8px solid #888888;
+  color: #888888;
 }
-.dropdowndiv {
-  background-color: #cecece;
-  padding: 8px 2px;
+.Secondimage p, h2 , a {
+  padding: 15px 2px;
+}
+.thepowerofd {
+  padding: 140px 0px;
+  color: #b5b5b5;
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px,auto);
+  grid-gap:  15px;
+  grid-row-gap: 15px;
+}
+@media screen and (max-width:600px) {
+  .options {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(150px,auto);
+    grid-gap:  15px;
+    grid-row-gap: 15px;
+  }
+}
+.childofoption {
+  margin: 1em;
+}
+.childofoption p {
+  margin: 1.5em 1em 3em;
+}
+#buttonrecent {
+  padding: 8px 13px;
+  position: relative;
+  text-align: center;
+  color: #888888;
+  background: #fff;
+  z-index: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  top: 30px;
+  border: 1.8px solid #888888;
+}
+#buttonrecent:hover {
+  color: #5b5b5b;
+  background: #fff;
+  border: 1.8px solid #5b5b5b;
+}
+.parentofrecent {
+  position: relative;
+  text-align: center;
+}
+.prices {
+  border-top: 1px solid grey;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px 10px;
+  font-size: 14px;
+  position: relative;
+}
+.maindivsofprices {
+  background-color: #515a63;
+  padding: 2px;
+}
+#Honestpricing {
+  padding: 8px 13px;
+  position: relative;
+  text-align: center;
+  color: #888888;
+  background: #fff;
+  z-index: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  top: 30px;
+  border: 1.8px solid #888888;
+}
+#Honestpricing:hover {
+  color: #5b5b5b;
+  background: #fff;
+  border: 1.8px solid #5b5b5b;
+}
+.bordered {
+    border: 3px solid #fff;
+    margin: 16px;
+    color: #fff;
+}
+.floatingofprices {
+  width: 33.3%;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  float: left;
+}
+@media screen and (max-width: 600px) {
+  .floatingofprices {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    float: left;
+  }
+}
+.parentofprices {
+  text-align: center;
+}
+.freelancers {
+  border-top: 1px solid grey;
+  margin: 0 auto;
+  margin-top: 300px;
+  padding: 40px 10px;
+  position: relative;
+  min-width: 200px;
+  text-align: center;
+  font-size: 14px;
 }
