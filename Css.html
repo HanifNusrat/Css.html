@@ -3,77 +3,130 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet " type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <title></title>
   </head>
   <body>
     <div class="general">
-      <header class="centerwidth" ></header>
+      <div class="generalchild">
+        <div id="myOverlay" class="overlay-big">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        <br>
+        <header class="centerwidth">
+          <div class="logoofnavbar">
+              <img src="Images/new-marketify-logo.svg" alt="">
+          </div>
+          <div class="navofnavbar">
+            <ul>
+              <li><a href="#" class="openBtn" onclick="openSearch()"> <i class="fas fa-search"></i></a></li>
+
+              <li><a href="#"> <i class="fas fa-shopping-cart"></i> 0 <i class="fas fa-angle-down"></i></a></li>
+              <li><a href="#"> POPULAR ITEMS</a></li>
+              <li><a href="#"> MARKETIFY PAGES</a></li>
+              <li><a class="threedrops" href="#"> BLOG</a></li>
+              <li><a class="threedrops" href="#"> SIGN IN</a></li>
+              <li><a class="threedrops" href="#"> JOIN NOW</a></li>
+            </ul>
+          </div>
+          <div class="Header">
+            <h2> Your beautiful handcrafted marketplace</h2>
+            <a href="maintwobutton"></a>
+            <a href=""></a>
+          </div>
+        </header>
+
+      </div>
+
       <main class="popular centerwidth" >
         <a href="" id="buttonpopular">Popular</a>
         <section class="slider">
               <div class="card overlay">
                 <img class="image" src="Images/relaxing-time.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlinepopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3  class="cardparagr">
+                    <a id="inlinepopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#"> By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                 </div>
               </div>
               <div class="card overlay">
                 <img class="image" src="Images/luminosity_preview.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3 class="cardparagr">
+                    <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#">By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                 </div>
               </div>
               <div class="card overlay">
                 <img class="image" src="Images/breakfast_preview.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlinepopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3 class="cardparagr">
+                    <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#">By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                   </div>
               </div>
               <div class="card overlay">
                 <img class="image" src="Images/beach-photo-pack-grid.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlineitempopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3 class="cardparagr">
+                    <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#">By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                 </div>
               </div>
               <div class="card overlay">
                 <img class="image" src="Images/innovation_preview.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlineitempopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3 class="cardparagr">
+                    <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#">By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                 </div>
               </div>
               <div class="card overlay">
                 <img class="image" src="Images/luminosity_preview.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlineitempopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3 class="cardparagr">
+                    <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#">By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                 </div>
               </div>
               <div class="card overlay">
                 <img class="image" src="Images/marketify-coffee-shop-final.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlineitempopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3 class="cardparagr">
+                    <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#">By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                 </div>
               </div>
               <div class="card overlay">
                 <img class="image" src="Images/uplifting-preview.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlineitempopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3 class="cardparagr">
+                    <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#">By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                 </div>
               </div>
               <div class="card overlay">
                 <img class="image" src="Images/Totally-Ukulele.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
-                  <a id="inlineitempopular" href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  <h3 class="cardparagr">
+                    <a id="inlinepopular"  href=""><i class="fas fa-play"></i> Relaxing time</a>
+                  </h3>
                   <a id="Authorsofpopular" href="#">By Astoundify <img src="https://marketify-demos.astoundify.com/classic/wp-content/uploads/sites/21/2017/02/KOKDXMir-avatar.jpg" alt="" height="12" width="12"> </a>
                 </div>
               </div>
@@ -233,9 +286,9 @@
           </div>
         </div>
       </aside>
-      <div class="parentofprices">
+      <div class="parentofprices centerwidth">
         <a href="#" id="Honestpricing">HONEST PRICING. NO SURPRISES.</a>
-        <div class="prices centerwidth">
+        <div class="prices">
           <div   class="floatingofprices">
             <div class="maindivsofprices">
               <div class="bordered">
@@ -284,51 +337,122 @@
           </div>
         </div>
       </div>
+      <br>
       <div class="freelancers centerwidth" >
         <div class="authors">
-          <div class="">
+          <div class="cardofauthors">
             <div class="paragraphofauthors">
               <p>Suspendisse in massa nec velit venenatis rutrum. Curabitur fermentum urna sed ipsum faucibus, et mollis lorem interdum. Aliquam erat volutpat. Quisque in mi consequat, finibus augue vel, mollis turpis. Proin placerat aliquet lacus. Donec maximus porttitor metus, eget elementum turpis sollicitudin a. Donec suscipit nisi eget arcu elementum condimentum.</p>
             </div>
             <div class="imgofauthors">
               <img src="Images/face-three-150x150.jpg" alt="">
+              <div class="pofauthors">
+                <h3>Dennis cooper</h3>
+                <p>Founder of dunder mifflin</p>
+              </div>
             </div>
           </div>
-          <div class="">
+          <div class="cardofauthors">
             <div class="paragraphofauthors">
               <p>Suspendisse in massa nec velit venenatis rutrum. Curabitur fermentum urna sed ipsum faucibus, et mollis lorem interdum. Aliquam erat volutpat. Quisque in mi consequat, finibus augue vel, mollis turpis. Proin placerat aliquet lacus. Donec maximus porttitor metus, eget elementum turpis sollicitudin a. Donec suscipit nisi eget arcu elementum condimentum.</p>
             </div>
             <div class="imgofauthors">
               <img src="Images/face-three-150x150.jpg" alt="">
+              <div class="pofauthors">
+                <h3>Dennis cooper</h3>
+                <p>Founder of dunder mifflin</p>
+              </div>
             </div>
           </div>
-          <div class="">
+          <div class="cardofauthors">
             <div class="paragraphofauthors">
               <p>Suspendisse in massa nec velit venenatis rutrum. Curabitur fermentum urna sed ipsum faucibus, et mollis lorem interdum. Aliquam erat volutpat. Quisque in mi consequat, finibus augue vel, mollis turpis. Proin placerat aliquet lacus. Donec maximus porttitor metus, eget elementum turpis sollicitudin a. Donec suscipit nisi eget arcu elementum condimentum.</p>
             </div>
             <div class="imgofauthors">
               <img src="Images/face-three-150x150.jpg" alt="">
+              <div class="pofauthors">
+                <h3>Dennis cooper</h3>
+                <p>Founder of dunder mifflin</p>
+              </div>
             </div>
           </div>
-          <div class="">
+          <div class="cardofauthors">
             <div class="paragraphofauthors">
               <p>Suspendisse in massa nec velit venenatis rutrum. Curabitur fermentum urna sed ipsum faucibus, et mollis lorem interdum. Aliquam erat volutpat. Quisque in mi consequat, finibus augue vel, mollis turpis. Proin placerat aliquet lacus. Donec maximus porttitor metus, eget elementum turpis sollicitudin a. Donec suscipit nisi eget arcu elementum condimentum.</p>
             </div>
             <div class="imgofauthors">
               <img src="Images/face-three-150x150.jpg" alt="">
+              <div class="pofauthors">
+                <h3>Dennis cooper</h3>
+                <p>Founder of dunder mifflin</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="helped-companies centerwidth"></div>
-      <div class="Thirdimage centerwidth"></div>
-      <footer class="centerwidth" ></footer>
+      <div class="helped-companies centerwidth">
+        <a href="http://tplinkwifi.net" class="imgofhel-co">
+          <img src="Images/jobify-logo.svg" alt="">
+        </a>
+        <a href="http://tplinkwifi.net" class="imgofhel-co">
+          <img src="Images/marketify-logo.svg" alt="">
+        </a>
+        <a href="http://tplinkwifi.net" class="imgofhel-co">
+          <img src="Images/fundify-logo.svg" alt="">
+        </a>
+        <a href="http://tplinkwifi.net" class="imgofhel-co">
+          <img src="Images/classify-logo.svg" alt="">
+        </a>
+        <a href="http://tplinkwifi.net" class="imgofhel-co">
+        <img src="Images/marketify-logo.svg" alt="">
+      </a>
+      </div>
+      <br>
+      <div class="Thirdimage">
+        <div class=" centerwidth">
+          <div class="pofthirdimg">
+            <h2>START YOUR MARKETPLACE</h2>
+            <p>This is the time to buy this awesome theme. You would be crazy not to!</p>
+            <a href="" type="button" name="button"></a>
+          </div>
+        </div>
+      </div>
+      <footer class="centerwidth" >
+        <div class="">
+          <h6>Resources & Links</h6>
+          <a href="https://www.google.com">Join Now</a> <br>
+          <a href="https://www.google.com">Sign In</a><br>
+          <a href="https://www.google.com">Pricing</a><br>
+          <a href="https://www.google.com">Terms Of Service</a><br>
+          <a href="https://www.google.com">Become an author</a><br>
+          <a href="https://www.google.com">Meet the Team</a><br>
+        </div>
+        <div class="">
+          <h6>From The Blog</h6>
+          <a href="https://www.google.com">When You Run Out of Ideas Get Creative</a><br>
+          <a href="https://www.google.com">How Creativity Works, & How to Do It</a><br>
+          <a href="https://www.google.com">8 Creativity Lessons From The Pros</a><br>
+          <a href="https://www.google.com">Creating Your Habit Environment</a><br>
+          <a href="https://www.google.com">The Key Habits of Organization</a><br>
+        </div>
+        <div class="">
+          <h6>About Marketify</h6>
+          <span>Marketing and selling physical or digital goods has never been easier with Marketify — the easiest marketplace eCommerce theme available. Beautiful product grids to show off your amazing products. Designed to sell physical goods, files, photos, audio, and video. Specifically crafted to be as flexible and versatile as possible.</span>
+        </div>
+      </footer>
     </div>
     <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet"/>
     <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
     <script type="text/javascript">
+    function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+    }
     $('.slider').slick({
       infinite: true,
       dots: true,

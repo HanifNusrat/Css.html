@@ -10,6 +10,91 @@
   margin: 0 auto;
   text-align: center;
 }
+.generalchild {
+  background-image: url(Images/main-bg-1832x1080-1.jpg);
+  color: white;
+  position: relative;
+}
+.navofnavbar {
+  width: 70%;
+  float: right;
+  position: relative;
+}
+.navofnavbar ul {
+  list-style-type: none;
+  float: left;
+  padding: 9px;
+}
+.navofnavbar li {
+  display: inline;
+  float: left;
+  line-height: 15px;
+  margin: 0px 5px;
+}
+.navofnavbar a {
+  color: white;
+  padding: 10px 20px;
+  float: right;
+}
+.overlay-big {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #535A64;
+  background-color: rgba(53,53,64, 0.9);
+}
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+.overlay-big .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+.overlay-big .closebtn:hover {
+    color: #ccc;
+}
+.overlay-big input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay-big button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay-big button:hover {
+    background: #bbb;
+}
+.logoofnavbar {
+  float: left;
+  width: 30%;
+}
+.Header {
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+.threedrops:hover {
+  border: 2px white;
+  border-style: solid;
+  padding: 8px 18px;
+}
 .popular {
   border-top: 1px solid grey;
   margin: 0 auto;
@@ -84,6 +169,7 @@ a {
 }
 .container {
   padding: 0;
+  border: 1px solid rgba(189,195,199,.38);
 }
 .container a {
   color: #363636;
@@ -125,6 +211,21 @@ a {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width:768px){
+  .recentsection {
+    border-top: 1px solid grey;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 40px 10px;
+    position: relative;
+    min-width: 200px;
+    text-align: center;
+    font-size: 14px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 50% 50%;
+  }
 }
 @media screen and (max-width:600px){
   .recentsection {
@@ -174,6 +275,15 @@ a {
   grid-auto-rows: minmax(100px,auto);
   grid-gap:  15px;
   grid-row-gap: 15px;
+}
+@media screen and (max-width:768px) {
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px,auto);
+    grid-gap:  15px;
+    grid-row-gap: 15px;
+  }
 }
 @media screen and (max-width:600px) {
   .options {
@@ -260,15 +370,92 @@ a {
   }
 }
 .parentofprices {
-  text-align: center;
-}
+    text-align: center;
+  }
 .freelancers {
   border-top: 1px solid grey;
   margin: 0 auto;
-  margin-top: 300px;
   padding: 40px 10px;
   position: relative;
-  min-width: 200px;
   text-align: center;
+  margin-top: 260px;
   font-size: 14px;
+}
+.cardparagr {
+  font-size: 16px;
+  padding: 2px 0px 3px 0px;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.card img {
+  display: block;
+}
+.container a {
+  font-size: 14px;
+}
+.imgofauthors img {
+  float: left;
+  border-radius: 50%;
+  width: 25%;
+}
+.pofauthors {
+  float: left;
+  text-align: left;
+  margin: 5% 5%;
+  font-size: 16px;
+}
+.helped-companies {
+  border-top: 1px solid grey;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  font-size: 14px;
+}
+.helped-companies a {
+  width: 20%;
+  float: left;
+}
+.Thirdimage {
+  background-image: url(Images/widget-hero-two-updated.jpg) ;
+  color: white;
+  margin-bottom: 50px;
+}
+footer {
+  border-top: 1px solid #bdc3c7;
+  padding: 10px 0px 40px;
+  text-align: left!important;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+footer div {
+  border-right: 1px solid #bdc3c7;
+  padding: 8px 6px;
+}
+footer div:nth-child(3n+3) {
+  border: none;
+}
+@media screen and (max-width:700px) {
+  footer {
+    border-top: none;
+    text-align: left!important;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  footer div {
+    border-top: 1px solid #bdc3c7;
+    border-right: none;
+    padding: 8px 6px;
+  }
+  footer div:nth-child(3n+3) {
+    border-top: 1px solid #bdc3c7;
+  }
+}
+
+footer a, span {
+  color: #515a63;
+  font-size: 10px;
+}
+footer a:hover {
+  text-decoration: underline;
 }
