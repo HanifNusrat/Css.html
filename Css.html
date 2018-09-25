@@ -14,8 +14,8 @@
         <div id="myOverlay" class="overlay-big">
           <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
           <div class="overlay-content">
-            <form action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search">
+            <form action="https://marketify-demos.astoundify.com/classic/">
+                <input type="text" placeholder="Search.." name="search">
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
           </div>
@@ -27,20 +27,49 @@
           </div>
           <div class="navofnavbar">
             <ul>
-              <li><a href="#" class="openBtn" onclick="openSearch()"> <i class="fas fa-search"></i></a></li>
-
-              <li><a href="#"> <i class="fas fa-shopping-cart"></i> 0 <i class="fas fa-angle-down"></i></a></li>
-              <li><a href="#"> POPULAR ITEMS</a></li>
-              <li><a href="#"> MARKETIFY PAGES</a></li>
+              <li ><a href="#" class="openBtn" onclick="openSearch()"> <i class="fas fa-search"></i></a></li>
+              <li class="withdropdown1"><a href="#"> <i class="fas fa-shopping-cart"></i> 0 <i class="fas fa-angle-down"></i></a>
+                <div class="shoppingempty">
+                  Your cart is empty
+                </div>
+              </li >
+              <li class="withdropdown1 shoppingemptyparent" tab-index="0"><a href="#"> POPULAR ITEMS</a>
+                 <div class="shoppingempty positioningdrop">
+                   <a href="#">audio</a>
+                   <a href="#">video</a>
+                   <a href="#">WordPress</a>
+                   <a href="#">drupal</a>
+                   <a href="#">tumbler</a>
+                   <a href="#">joomla</a>
+                   <a href="#">ghost</a>
+                   <a href="#">html</a>
+                </div>
+              </li>
+              <li class="withdropdown1 shoppingemptyparent" tab-index="0"><a href="#"> MARKETIFY PAGES</a>
+                <div class="shoppingempty positioningdrop" id="idofdrops">
+                  <b> <a href="#">MARKETIFY FEATURES</a> <br>
+                  <a href="#">MEET THE TEAM</a> <br>
+                  <a href="#">BLOG</a> <br>
+                  <a href="#">AUTHOR PROFILE PAGE</a> <br>
+                  <a href="#">BECOME AN AUTHOR</a> <br>
+                  <a href="#">PRODUCTS PAGE</a> <br>
+                  <a href="#">AUDIO PRODUCT PAGE</a> <br>
+                  <a href="#">VIDEO PRODUCT PAGE</a> <br>
+                  <a href="#">POPULAR ITEMS</a> <br>
+                  <a href="#">SETTINGS</a>  <br>
+                  <a href="#">PRICING</a> <br>
+                  <a href="#">TERMS OF SERVICE</a></b> <br>
+                </div>
+              </li>
               <li><a class="threedrops" href="#"> BLOG</a></li>
               <li><a class="threedrops" href="#"> SIGN IN</a></li>
               <li><a class="threedrops" href="#"> JOIN NOW</a></li>
             </ul>
           </div>
           <div class="Header">
-            <h2> Your beautiful handcrafted marketplace</h2>
-            <a href="maintwobutton"></a>
-            <a href=""></a>
+            <h1> Your beautiful handcrafted marketplace</h1>
+            <a href="maintwobutton">SHOP NOW</a>
+            <a href="">START SELLING</a>
           </div>
         </header>
 
