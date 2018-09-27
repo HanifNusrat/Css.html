@@ -36,6 +36,7 @@
   color: white;
   padding: 10px 20px;
   float: right;
+  font-weight: bold;
 }
 .overlay-big {
   width: 100%;
@@ -105,6 +106,7 @@
   border: 2px white;
   border-style: solid;
   padding: 8px 18px;
+  transition: 0.5s ease-in-out;
 }
 .shoppingempty {
   color: grey;
@@ -116,18 +118,16 @@
   border-radius: 5px;
   width: 180px;
   visibility: hidden;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-  transform: translateY(0em);
+  transform: translate(0,-60%) scale(0);
   text-align: left;
   top: 42px;
-
   left: -94px;
 }
 .withdropdown1::after {
   opacity: 0;
   z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   visibility: hidden;
+  transform: translate(0,-60%) scale(0);
 }
 .withdropdown1:hover::after {
   content: "";
@@ -136,9 +136,10 @@
   z-index: 1;
   border-color: #ededed transparent;
   border-style: solid;
+  transform: translate(0) scale(1);
   border-width: 0px 12px 12px 12px;
   visibility: visible;
-  transition-delay: 0s, 0s, 0.3s;
+  transition: 0.5s ease-in-out;
   position: absolute;
   width: 0px;
   left: 49px;
@@ -148,10 +149,10 @@
 .withdropdown1:focus-within .shoppingempty,
 .withdropdown1:hover .shoppingempty {
   visibility: visible;
-  transition-delay: 0s, 0s, 0.3s;
+  transition: all 0.2s ease-in-out;
   z-index: 1;
   opacity: 1;
-  transform: translateY(0%);
+  transform: translate(0) scale(1);
 }
 .positioningdrop {
   left: -1px;
